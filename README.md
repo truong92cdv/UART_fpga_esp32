@@ -1,12 +1,10 @@
 # UART_fpga_esp32
-FPGA interface with ESP32 via UART protocol
+FPGA interface with ESP32 or ESP8266 via UART protocol, connect to Thingsboard.
 
-Button và đèn LED giao thông kết nối phía ESP32.
+Button và đèn LED kết nối phía ESP32 (hoặc dùng LED và Button có sẵn trên ESP8266).
 
-Khi nhấn BTN trên Zuboard thì gửi lệnh đến ESP32 qua UART, bật tắt đèn giao thông.
+Khi nhấn BTN trên Zuboard thì gửi lệnh Zuboard -> ESP32 qua UART, bật tắt đèn trên ESP32, đồng thời hiển thị Led Indicator trên Thingsboard.
 
-Khi nhấn button trên breadboard thì gửi lệnh ESP32 -> Zuboard qua UART, bật tắt led trên Zuboard.
+Khi nhấn button trên ESP32, hoặc khi toggle switch trên Thingsboard thì gửi lệnh ESP32 -> Zuboard qua UART, bật tắt led trên Zuboard.
 
-![schematic](./images/schematic.png)
-
-https://github.com/user-attachments/assets/3eb77551-ba09-4808-97e8-d49f98378953
+https://github.com/user-attachments/assets/7471a146-a458-4281-b12c-d379d0f1d4b4
