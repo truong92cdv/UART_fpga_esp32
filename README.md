@@ -1,5 +1,5 @@
 # UART_fpga_esp32
-FPGA interface with ESP32 or ESP8266 via UART protocol, connect to Thingsboard.
+**FPGA interface with ESP32 or ESP8266 via UART protocol, connect to Thingsboard.**
 
 Button và đèn LED kết nối phía ESP32 (hoặc dùng LED và Button có sẵn trên ESP8266).
 
