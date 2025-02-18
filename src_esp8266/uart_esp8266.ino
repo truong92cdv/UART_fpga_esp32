@@ -1,4 +1,6 @@
-#include <ESP8266WiFi.h> // For ESP8266
+// #include <Wifi.h>           // For ESP32
+
+#include <ESP8266WiFi.h>     // For ESP8266
 #include <PubSubClient.h>
 #include <ArduinoJson.h>
 #include <SoftwareSerial.h>
@@ -64,7 +66,7 @@ void loop() {
 void reconnect() {
     while (!client.connected()) {
         Serial.print("Connecting to ThingsBoard...");
-        if (client.connect("ESP8266_Client", token, NULL)) {
+        if (client.connect("ESP_Client", token, NULL)) {
             Serial.println("connected");
             client.subscribe("v1/devices/me/rpc/request/+");
         } else {
